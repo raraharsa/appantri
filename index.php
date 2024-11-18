@@ -26,7 +26,7 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 
 <?php
-$page = ($_GET['page'])?$_GET['page']:null;
+$page = isset($_GET['page'])?$_GET['page']:null;
 if (isset($page)){
   if ($page=='keluar') {
     include "modul/logout.php";
